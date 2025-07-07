@@ -1,0 +1,65 @@
+**** agile model / agile methodology/ agile process 
+**********
+- agile is a process model -> It is iterative and incremental approach 
+  - iterative -> the same process will repeat and repeat again -> 
+    - getting rquirments, design, coding and testing again and again -> iterative approach
+    - we add new feature for test. During testing process, we will add new features -> incremental approach 
+
+- It is iterative and incremental process 
+
+- agile principles -> 
+  - Customer no need to wait for a long time 
+  - we develop, test and release a peice of software to the customer with a few number of features 
+  - we can accept/acommodate requirment changes. 
+  - delivery of software is very fast 
+
+- There will be good communication between customer, business analyst, developers and testers
+
+- advantages of agile -> 
+  - Requirment changes are allowed in any stage of development or we can accommodate requirment changes in the middle of development
+  - Release very fast (weekly)
+  - Customer no need to wait for a long time 
+  - Good communication between team members 
+  - It is very easy model to adopt 
+
+- disadvantages of agile -> 
+  - less focus on design documentation since we deliver software very fast
+
+
+- scrum -> is a framework in order to develop, tets and release a program (helps to follow the principle of agile) 
+(scrum is a framework through which we build software product by following agile principles)
+  - scrum includes group of people called as scrum team. Normally contains 5-9 members ->
+    - scrum team (agile team) -> 
+      - product owner -> 
+        - define the features of the product
+        - prioritize features according to markey value
+        - adjust feature and priority every iteration, as need
+        - accept or rejet work results
+      - scrum master -> The main role is facilitating and deriving the agile process 
+      - develop team and QA -> Develop and test software 
+
+
+*********** Terminology ***************
+- user story -> a feature / module in a software -> small requirements
+- epic -> a collection of user stories -> latge requirements
+- product backlog -> contains list of user stories. Prepared by product owner -> a document 
+- sprint/iteration -> a period of time to complete the user stories, decided by product owner and team, usually 2-4 weeks od time 
+- sprint planing meeting -> Meeting  conducts with the team to define what can be delivered in the sprint and duration 
+- sprint backlog -> list of committed stories by Dev/QA for specific sprint 
+- scrum meeting -> Meeting conducted by scrum master every day 15 mins. Called as scrum call/stand up meeting -> 
+  - what did you do yesterday ?
+  - what will you do today ?
+  - are there any impediments in your way ?
+
+- sprint retrospective meeting -> It will happen once after completion of sprint. The entie team, including both the scrum master and the product owner should participate 
+
+- story point -> Rough estimate of user stories, will be given by Dev and QA in the form of Fibonacci series
+
+    0 1 1 2 3 5 8
+
+    1 story point = 1hours / 1 day (6 hours)
+
+    login -----> Dev: 5     QA = 3  = 8 hours / 1 day
+
+
+- burndown chart -> shows how much remaining in the sprint. Maintained by scrum master daily

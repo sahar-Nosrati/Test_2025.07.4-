@@ -1,0 +1,196 @@
+- reasons failed computer projects -> 
+  - error -> fault (defect) -> failure 
+
+
+- Prperties of testing -> 
+  - impossible exhaustive testing 
+  - testing and risk -> when you have a sensitive app, it needs more sensitive testing
+  - testing and quality -> It is possible that your application works very well from aspect of functionality. However, it could not meet other expectation such  as security, performance etc. Therefore, in general the app could not meet the qulity from the aspect of client. 
+
+- resources triangle -> 
+  - time 
+  - money
+  - quality 
+
+- testing reports and identifys the defects. Moreover, it can create coverage on app and we can evaluate qulity of app. This evaluation is not complete. 
+- testing helps us to prevent failure in our app. 
+
+
+- How can we considerer the test is enough for our app and which points we should consider about this? 
+  - Prioritize -> consideration the most important properties of app 
+  - define : completion criteria -> determine how much defects are acceptable for our app 
+
+
+- Testing -> The activity (fundamental method) with specified targeting techniques in order to decrease the project risk and improve its quality by finding its defects 
+
+- testing in sofware -> The systematic and methodothical methods with specified targeting techniques in order to find the project risk and defects for detection of which specified goal of sofware coul not be provided 
+
+- test concepts -> 
+  - test basis -> knowledge about the system of framwork that we want to create a test for it, determine the tools or equipments for test
+  - test condition -> Create test for specifiec subject or condition -> write specified explanation 
+  - test cases -> a collection of test conditions as input, output and expectation results
+  - test procedure -> composed of a continuous collection of test case 
+
+- testing vs debuging -> 
+  - debugging -> 
+    - a programmer tries to find defect and bug and solve them
+    - debugging does not show us any modification on code can influence other part of app or not 
+  - test -> 
+    - systematic search on app (system) in order to find Probability of defect and report it.
+    - tester should repeat several times tests for meeting all expectations and corrections and modifications are usefull
+    - test -> a part of quality control  (QC)
+    - QC IS a part of quality management 
+    - quality management -> 
+      - QC -> control to achive specified cotrol level 
+      - quality assurance -> total procedure for production of a software works perfectly
+    - point -> in test, tester will not remove the defect
+
+- static test -> the program has not been excuted yet -> 
+  - review of specification (document) program
+- dynamic test -> after excution of the program based on test information 
+- test is usefull when defects will be detected
+
+- principles of test -> 
+  - testing shows the presence, not absence of defect
+  - exhaustive test is impossible
+  - Early testing saves money and time 
+  - defects cluster together 
+  - be aware of pesticide paradox -> Do not repeat the same test in the same range, these tests can not demonstarte more defects -> use different techniques for detection of defects 
+  - testing is context dependent -> test is dependent of condition and environment 
+
+- test process in context 
+
+- excution of several test is defied as test excution 
+- test activities and tasks ->
+  - test planing 
+  - test monitoring and control 
+  - test analysis -> what should we test? 
+    - evaluation of all test basis
+    - system requirment 
+    - function requirment 
+    - user stories 
+  - test design -> how we should test?
+    - software architecture
+    - system architechture 
+    - relation between tables and database 
+    - functional and non-functional risks
+    - prioritization of cases for features  
+    - determine undefined case in test -> 
+      - write test case
+      - prioritzation of test case 
+      - determine everything as test data 
+      - determine the test environment 
+  - test implementation -> do you have every thing you need for test ? 
+    - create and prioritization of test procedures 
+    - automation test 
+  - test excution -> 
+    - record and save the test like version, tested items, test tools 
+    - repeatation of test (for regression test)
+    - add new features to software (for regression test)
+    - new version (for regression test)
+  - test completion -> 
+    - collection of data
+
+- SDLC (software development lifecycle) levels -> 
+  - Reqyirment specificatiob -> functional specification -> technical specification -> program specification -> coding -> test
+
+- the main problem waterfall approach of SDLC -> Testing is being srated late. 
+- we need -> 
+  - quality control and quality assurance in all level of development 
+
+
+- v model -> 
+  - verification -> evaluation main needs of product 
+    - building product in a right way
+  - validation -> it is based on software and user of it 
+    - building the right product 
+
+- test level -> 
+  - component (unit) test -> 
+    - testing on unit of code
+    - can be done by Mock objects -> 
+    - functional, non-functional, structural testing 
+    - TDD 
+  - integration test -> 
+    - types -> 
+      - component integration test 
+      - system integration test 
+    - CI server 
+    - test basis -> system design document, sequence diagram, use case, workflow, 
+    - cases -> subsystem, data base, tables relationship, infrastructure, API, Microservices
+  - system test -> 
+    - installability
+    - Maintainability
+    - performance
+    - load handling 
+    - stress handling
+    - portability
+    - recovery
+    - reliability
+    - usability
+  - acceptance test -> 
+    - user acceptance test 
+    - operational acceptance test
+    - back-up facilities 
+    - security vulnerabilities
+    - contract and regulatory acceptance test 
+    - alpha and beta test 
+
+- each test level needs a test basis -> define items for testing 
+
+- static test -> test will be performed of program excution 
+
+- review process (review code) -> 
+  - formal and informal 
+  - goals 
+  - people involved and roles ->
+    - Author
+    - moderator
+    - manager 
+    - scriber
+    - reviewer (inspector/checker)
+
+- review types -> 
+  - Informal 
+  - walkthrough 
+  - technical review 
+  - Inspection 
+
+- Review techniques ->
+  - Ad-hoc
+  - check list based 
+  - Scenario and DRY-run based (test execution)
+  - role based 
+  - Perspective based
+
+- test coverage rate -> Quantitative assessment of the extent and quality of testing 
+
+- choosing test techniques ->
+  - white box testing -> 
+    - statement testing and coverage
+    - Decision testing and coverage 
+    - The value of statement and decision testing 
+  - balck box testing -> based on requirement -> 
+    - techniques -> 
+      - Equivalence partitioning -> the values of test can cd grouped in different groups -> 
+        - input : a collection of integers from -10000 - +10000 
+        - groups -> number < 0 , number = 0 , number > 0 -> each group is considered as equivalence partition 
+        - 3 test case were created 
+        - we can test, test cases with random numbers 
+      - Boundary value analysis -> evaluation border values 
+        - create different test cases : 
+          - values < 1 , 1 < values , value1 < 1 < value2, value < 99 , value > 99, value1 < 99 < value2 
+      - Decision table testing -> different conditions and combination them with each other 
+      - state transition testing 
+      - Use case testing -> usful for acceptance test
+  - gray box testing 
+  - experience testing -> 
+    - error guessing
+  - expolatory testing -> based specification and his/her experience 
+  - check list testing 
+
+************ test management :
+- test organization
+- test manager and tester 
+- test planing and estimate 
+- reporting and issue 
